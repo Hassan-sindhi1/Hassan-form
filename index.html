@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+              <h1 style="text-align: center; font-size: 10ch;">FORM</h1>
+</head>
+<body style="background-color: greenyellow;">
+              
+              <form style="margin: 0px auto; width: 30%; text-align: center;">
+                            <fieldset>
+                            <legend><h2>Sign up</h2></legend>
+                            <h3 style="color: red;">Personal detail</h3>
+                            Name: <input type="text" required> <br><br>
+                            Password: <input type="password" name="pass" id="password" required> <br> <br>
+                           Email: <input type="email" name="" id="" required> <br><br>
+                           Gender <input type="radio" name="1" id="1"required>Male <input type="radio" name="1" id="1">Female <br> <br>
+                           Contact# <input type="number" id="numInput" placeholder="Enter your number"> 
+
+                           <script>
+                             document.getElementById("numInput").addEventListener("input", function() {
+                               let value = this.value;
+                               if (value.length > 5) {
+                                 this.value = value.slice(0, 11); // Limits to 5 digits
+                               }
+                             });
+                           </script>
+                             <br><br>
+                           
+                        <div>
+                            <h3 style="color: red;">Educational Qualification</h3>
+                              Degree: <select name="na" id="no">
+                            <option value="1" selected>---SELECT GRADE---</option>
+                            <option value="1">GRADE A</option>
+                            <option value="1">GRADE B</option>
+                            <option value="1">GRADE C</option>
+                            <option value="1">GRADE D</option>
+                           </select> <br> <br>
+                           Engineering:<select name="na" id="no">
+                            <option value="1" selected>---SELECT GROUPE---</option>
+                            <option value="1">GROUP 1</option>
+                            <option value="1">GROUP 2</option>
+                            <option value="1">GROUP 3</option>
+                            <option value="1">GROUP 4</option>
+                           </select> <br> <br>
+                       </div>
+
+                  <div>     Hobbies 
+                       <input type="radio" name="1" id="1">Playing chess  
+                       <input type="radio" name="1" id="1">Reading Books
+                 </div>                 <br>
+                 <div>
+                <h2 style="color: red;">Address</h2>
+                <textarea name="no" id="ok" cols="35" rows="7"></textarea> <br> <br>
+                Attch Resume: <input type="file">
+                 </div>
+                 <div><input type="image" src="ASSIGMNET AND PNG/SUBMIT.png" style="height: 70px;"></div>
+
+              </fieldset>
+              </form>
+</body>
+</html>
